@@ -12,6 +12,11 @@ namespace Lab2
 {
     class dotnet_Lab2
     {
+        static double equation(double x)
+        {
+            //y = x^3 - 2
+            return (x * x * x) - 2;
+        }
         static void Main(string[] args)
         {
 
