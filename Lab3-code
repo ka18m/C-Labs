@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+/*
+ * Write a program to uses a text box for input and a button to indicate when 
+ * the user has entered new data.  The data will be display on successive lines 
+ * in a text box.  Make sure that there is space for at least 10 lines and allow scrolling. 
+ */
+
+namespace Lab3
+{
+    public partial class Lab3 : Form
+    {
+        public Lab3()
+        {
+            InitializeComponent();
+        }
+
+        private void Input_Button_Click(object sender, EventArgs e)
+        {
+            string line = input_textbox.Text + "\r\n";
+            output_textbox.Text += line;
+
+        }
+
+        private void Clear_Button_Click(object sender, EventArgs e)
+        {
+            output_textbox.Text = "";
+        }
+    }
+}
